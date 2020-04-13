@@ -19,35 +19,32 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
+
     return Scaffold(
       body: Column(
           children:
           <Widget>[
         Expanded(
-          flex: 1,
+          flex: 2,
           child: Center(
-            child: Text("Por favor apuntar hacia el QR"),
-          ),
-        ),
+            child: Text("Favor apuntar al QR del Cliente: $qrText"
+            , style: TextStyle(fontSize: 15.0),))
+               ),
         Expanded(
-          flex: 5,
-          child:  QRView(key: qrkey,
+          flex:15,
+          child: Center(
+            child: Container(child:  QRView(key: qrkey,
               overlay: QrScannerOverlayShape(
                 borderRadius: 10,
-                borderColor: Colors.lightGreen,
+                borderColor: Colors.lightBlueAccent,
                 borderLength: 30,
                 borderWidth: 10,
                 cutOutSize: 300,
               ),
               onQRViewCreated: _onQRViewCreated,
-
+          )))
           ),
-          ),
-            Expanded(
-          child: Center(
-              child: Text("Lectura: $qrText")
-          )
-        )
+          
       ]),
     );
   }
