@@ -1,6 +1,6 @@
 # flutterappqrscan
 
-A new Flutter application de scan qr
+Es una aplicacion que hace un scan a un codigo qr y te lo almacena en una variable
 
 ## Getting Started
 
