@@ -1,6 +1,10 @@
 # flutterappqrscan
 
 Es una aplicacion que hace un scan a un codigo qr y te lo almacena en una variable
+es un proyecto modelo que busca que los programadores flutter tenga opcion de lectura 
+de codigos QR
+
+# Juan Jose Clara
 
 ## Getting Started
 
